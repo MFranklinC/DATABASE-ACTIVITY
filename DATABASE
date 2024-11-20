@@ -1,0 +1,37 @@
+create database sari_store;
+
+CREATE TABLE tindahan (
+    ITEM_NUMBER INT PRIMARY KEY AUTO_INCREMENT,
+    ITEM_NAME VARCHAR(50) NOT NULL,
+    BRAND VARCHAR (30) NOT NULL,
+    PRICE INT,
+    EXPIRATION_DATE DATE NULL
+);
+
+
+INSERT INTO tindahan (ITEM_NAME, BRAND, PRICE, EXPIRATION_DATE) VALUES
+('Lucky Me Chicken', 'Lucky Me', 15, '2025-10-14'),
+('Canned Tuna', 'Century Tuna', 25, '2025-12-10'),
+('Mega Sardines', 'Mega', 25, '2025-10-10'),
+('Toothpaste', 'Colgate', 17, '2026-11-20'),
+('Tomato Ketchup', 'UFC', 30, '2025-09-20'),
+('Coffee Sachet', '3in1', 15, '2027-12-30'),
+('Soft Drinks', 'Mountain Dew', 22, '2027-07-17'),
+('Juice', 'Tang', 18, '2026-05-19'),
+('Biscuits', 'Rebisco', 10, '2027-07-10'),
+('Pancit Canton', 'Lucky Me', 15, '2026-07-23'),
+('Ice Cream', 'Selecta', 30, '2025-07-10'),
+('Soy Sauce', 'Datu Puti', 16, '2026-05-30'),
+('Vinegar', 'Datu Puti', 16, '2025-04-10'),
+('Corned Beef', 'Argentina', 19, '2026-10-10'),
+('Shampoo', 'Cream Silk', 17, NULL),
+('Powdered Milk', 'Bear Brand', 15, '2025-10-15'),
+('Hotdog', 'Tender Juicy', 20, '2025-10-06'),
+('Bottled Water', 'Absolute', 10, NULL),
+('Cigarettes', 'Mighty', 12, NULL),
+('Bread', 'Magnolia', 30, NULL),
+('Gin San Miguel', 'Ginebra San Miguel', 60, NULL),
+('Tanduay Rhum', 'Tanduay', 40, NULL),
+('Red Horse', 'San Miguel Brewery', 50, NULL),
+('Emperador Light', 'Emperador', 70, NULL),
+('Alfonso Light', 'Alfonso', 100, NULL);
